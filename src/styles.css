@@ -1,0 +1,19 @@
+body { height: 100vh; }
+.clear {
+  background-image: url(./assets/marc-wieland-TrzlGaRedf0-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sunny {
+  background-image: url(./assets/marko-blazevic-GFFGe2eGmiM-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rainy {
+  background-image: url(./assets/zenad-nabil-QNgT5iy62BM-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
