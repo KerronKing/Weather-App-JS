@@ -1,6 +1,6 @@
 const page = (() => {
   const render = () => {
-
+    
   }
   return { render }
 })();
