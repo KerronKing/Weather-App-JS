@@ -10,28 +10,28 @@ body { height: 100vh; }
   background-size: cover;
 }
 #clear {
-  animation: animbkg 3s;
+  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/marc-wieland-TrzlGaRedf0-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #sunny {
-  animation: animbkg 3s;
+  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/marko-blazevic-GFFGe2eGmiM-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #rainy {
-  animation: animbkg 3s;
+  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/zenad-nabil-QNgT5iy62BM-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #overcast {
-  animation: animbkg 3s;
+  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/nathan-anderson-uftVkZ1ikn4-unsplash-2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
