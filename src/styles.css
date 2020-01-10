@@ -37,3 +37,61 @@ body { height: 100vh; }
   background-repeat: no-repeat;
   background-size: cover;
 }
+h1 {
+  color: white;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.info {
+  
+  border-radius: 5px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 3rem;;
+}
+.collection {
+  border: 2px solid rgba(255, 255, 255, 0.5); 
+  width: 60%; 
+}
+.info form {
+  text-align: center;
+}
+#form label { color: white; }
+#form input {
+  background-color: transparent;
+  border: 0.1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 0.2rem;
+}
+#form input::placeholder { color: rgba(255, 255, 255, 0.5); }
+#form button {
+  background-color: transparent;
+  border: 0.1px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-left: 0.9rem;
+}
+#temp-form {
+  color: white;
+  margin-top: 1rem;
+}
+.data {
+  border: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+  width: 75%;
+}
+.data-pt {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 1rem;
+  margin: 0 auto;
+  margin: 1rem;
+  padding: 3rem;
+  text-align: center;
+  width: 30%;
+}

@@ -20,6 +20,8 @@ const page = (() => {
       document.body.id = '';
       document.body.id = 'clear';
     }
+    const wind = document.getElementById('wind-speed');
+    wind.textContent = `Wind speed: ${obj.wind['speed']}`;
   }
   const tempChanger = (obj) => {
     const temp = document.getElementById('temp');

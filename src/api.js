@@ -7,7 +7,7 @@ const external = (() => {
     const weatherData = await response.json();
     page.render(weatherData, countryName);
     page.tempChanger(weatherData);
-    console.log(`${weatherData.name}, ${weatherData.main['temp']}, ${weatherData.weather[0].description}`);
+    console.log(`${weatherData.wind['speed']}`);
   };
   const getWeather = async (city, country) => {
     const internal = await fetch('/src/names.json', { mode: 'cors' });
