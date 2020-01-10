@@ -9,9 +9,9 @@
 </head>
 <body id="default-bkg">
   <h1>King's Weather Forecast</h1>
-  <div>
+  <div class="info collection">
     <form id="form">
-      <label>Enter a location:</label><br>
+      <label>Enter a location:</label>
       <input name="city" id="city" type="text" placeholder="City">
       <input name="country" id="country" type="text" placeholder="Country">
       <button class="btn">Get Forecast</button><br>
@@ -21,10 +21,11 @@
       <input name="temp" id="temp" type="checkbox"><br>
     </form>
   </div>
-  <div id="display">
-    <div id="city-label"></div>
-    <div id="conditions"></div>
-    <div id="temperature"></div>
+  <div class="info data">
+    <div id="city-label" class="data-pt"></div>
+    <div id="conditions" class="data-pt"></div>
+    <div id="temperature" class="data-pt"></div>
+    <div id="wind-speed" class="data-pt"></div>
   </div>
   <script src="main.js"></script>
 </body>
