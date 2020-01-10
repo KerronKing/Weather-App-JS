@@ -1,18 +1,38 @@
 body { height: 100vh; }
-.clear {
+@keyframes animbkg {
+  from { background-position: 0 0; }
+  to { background-position: center center; }
+}
+#default-bkg {
+  background-image: url(./assets/sara-the-freak-A4UojtraSrw-unsplash-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#clear {
+  animation: animbkg 3s;
   background-image: url(./assets/marc-wieland-TrzlGaRedf0-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.sunny {
+#sunny {
+  animation: animbkg 3s;
   background-image: url(./assets/marko-blazevic-GFFGe2eGmiM-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.rainy {
+#rainy {
+  animation: animbkg 3s;
   background-image: url(./assets/zenad-nabil-QNgT5iy62BM-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#overcast {
+  animation: animbkg 3s;
+  background-image: url(./assets/nathan-anderson-uftVkZ1ikn4-unsplash-2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
