@@ -7,7 +7,7 @@
   <link href="/src/styles.css" rel="stylesheet" type="text/css">
   <title>Weather App</title>
 </head>
-<body class="rainy">
+<body>
   <h1>King's Weather Forecast</h1>
   <div>
     <form id="form">
@@ -16,6 +16,11 @@
       <input name="country" id="country" placeholder="Country">
       <button class="btn">Get Forecast</button>
     </form>
+  </div>
+  <div id="display">
+    <div id="city-label"></div>
+    <div id="conditions"></div>
+    <div id="temperature"></div>
   </div>
   <script src="main.js"></script>
 </body>
