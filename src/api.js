@@ -1,4 +1,4 @@
-import page from './dom'
+import page from './dom';
 
 const external = (() => {
   const open = async (city, countryCode, countryName) => {
