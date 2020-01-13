@@ -1,4 +1,5 @@
 import external from './api.js';
+import './styles.css';
 
 const form = document.getElementById('form');
 form.addEventListener('submit', (e) => {
