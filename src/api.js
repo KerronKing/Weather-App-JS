@@ -1,4 +1,5 @@
-import page from './dom.js'
+import page from './dom'
+
 const external = (() => {
   const open = async (city, countryCode, countryName) => {
     const apiCall = 'https://api.openweathermap.org/data/2.5/weather?q=';
@@ -7,7 +8,6 @@ const external = (() => {
     const weatherData = await response.json();
     page.render(weatherData, countryName);
     page.tempChanger(weatherData);
-    console.log(`${weatherData.wind.speed}`);
   };
   const getWeather = async (city, country) => {
     const internal = await fetch('/src/names.json', { mode: 'cors' });
@@ -18,4 +18,3 @@ const external = (() => {
   return { getWeather };
 })();
 export default external;
-

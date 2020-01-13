@@ -29,11 +29,11 @@ const page = (() => {
     temp.addEventListener('change', () => {
       if (temp.checked) {
         temperature.textContent = '';
-        const fhrTemp = Math.ceil((obj.main['temp'] - 273) * (9 / 5) + 32);
+        const fhrTemp = Math.ceil((obj.main.temp - 273) * (9 / 5) + 32);
         temperature.textContent = `${fhrTemp} deg F`;
       } else {
         temperature.textContent = '';
-        const celTemp = Math.ceil(obj.main['temp'] - 273);
+        const celTemp = Math.ceil(obj.main.temp - 273);
         temperature.textContent = `${celTemp} deg C`;
       }
     });
