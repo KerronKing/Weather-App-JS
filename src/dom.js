@@ -3,7 +3,7 @@ const page = (() => {
     const cityLabel = document.getElementById('city-label');
     cityLabel.textContent = `${obj.name} (${name})`;
     const temperature = document.getElementById('temperature');
-    const celTemp = Math.ceil(obj.main['temp'] - 273);
+    const celTemp = Math.ceil(obj.main.temp - 273);
     temperature.textContent = `${celTemp} deg C`;
     const conditions = document.getElementById('conditions');
     conditions.textContent = `${obj.weather[0].description}`;
@@ -21,15 +21,15 @@ const page = (() => {
       document.body.id = 'clear';
     }
     const wind = document.getElementById('wind-speed');
-    wind.textContent = `Wind speed: ${obj.wind['speed']}`;
-  }
+    wind.textContent = `Wind speed: ${obj.wind.speed}`;
+  };
   const tempChanger = (obj) => {
     const temp = document.getElementById('temp');
     const temperature = document.getElementById('temperature');
     temp.addEventListener('change', () => {
       if (temp.checked) {
         temperature.textContent = '';
-        const fhrTemp = Math.ceil((obj.main['temp'] - 273) * (9/5) + 32);
+        const fhrTemp = Math.ceil((obj.main['temp'] - 273) * (9 / 5) + 32);
         temperature.textContent = `${fhrTemp} deg F`;
       } else {
         temperature.textContent = '';
@@ -37,7 +37,7 @@ const page = (() => {
         temperature.textContent = `${celTemp} deg C`;
       }
     });
-  }
-  return { render, tempChanger }
+  };
+  return { render, tempChanger };
 })();
 export default page;
