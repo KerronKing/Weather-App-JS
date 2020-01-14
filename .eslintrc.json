@@ -15,8 +15,6 @@
         "sourceType": "module"
     },
     "rules": {
-    },
-    "settings": {
-        "import/resolver": "webpack"
+        "import/no-unresolved": "off"
     }
 }
