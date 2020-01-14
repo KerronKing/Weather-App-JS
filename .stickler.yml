@@ -8,5 +8,6 @@ linters:
 files:
   ignore:
       - 'dist/*'
+      - './*.js'
 fixers:
     enable: true
