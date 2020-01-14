@@ -15,7 +15,8 @@
         "sourceType": "module"
     },
     "rules": {
-        "import/no-unresolved": "off"
+        "import/extensions": "off",
+        "import/no-unresolved": 0
     },
     "settings": {
         "import/resolver": {
