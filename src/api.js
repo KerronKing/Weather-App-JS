@@ -10,10 +10,11 @@ const external = (() => {
     page.tempChanger(weatherData);
   };
   const capitalize = (entry) => {
-    entry.toLowerCase()
+    const proper = entry.toLowerCase()
       .split(' ')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
+    return proper;
   };
   const getWeather = async (city, country) => {
     const casedCountry = capitalize(country);

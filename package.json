@@ -1,7 +1,7 @@
 {
   "name": "weather-app-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "The aim of this project was to design and build a weather forecasting site using ES modules, webpack and the OpenWeather API [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/weather-app).",
   "private": true,
   "main": "index.js",
   "scripts": {
