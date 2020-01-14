@@ -16,16 +16,9 @@
     },
     "rules": {
         "import/extensions": "off",
-        "import/no-unresolved": 0
+        "import/no-unresolved": "off"
     },
     "settings": {
-        "import/resolver": {
-          "node": {
-            "extensions": [
-              ".js",
-              ".jsx"
-            ]
-          }
-        }
+        "import/resolver": "webpack"
       }
 }
