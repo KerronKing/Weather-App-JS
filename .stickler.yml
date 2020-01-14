@@ -8,7 +8,7 @@ linters:
 files:
   ignore:
       - 'dist/*'
-      - './webpack.dev.js'
-      - './webpack.prod.js'
+      - 'webpack.dev.js'
+      - 'webpack.prod.js'
 fixers:
     enable: true
