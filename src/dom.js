@@ -26,12 +26,17 @@ const page = (() => {
   const tempChanger = (obj) => {
     const temp = document.getElementById('temp');
     const temperature = document.getElementById('temperature');
+    const label = document.getElementById('temp-label');
     temp.addEventListener('change', () => {
       if (temp.checked) {
+        label.textContent = '';
+        label.textContent = 'To Celcius:';
         temperature.textContent = '';
         const fhrTemp = Math.ceil((obj.main.temp - 273) * (9 / 5) + 32);
         temperature.textContent = `${fhrTemp} deg F`;
       } else {
+        label.textContent = '';
+        label.textContent = 'To Fahrenheit:';
         temperature.textContent = '';
         const celTemp = Math.ceil(obj.main.temp - 273);
         temperature.textContent = `${celTemp} deg C`;
