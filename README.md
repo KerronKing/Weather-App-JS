@@ -8,7 +8,8 @@ The aim of this project was to design and build a weather forecasting site using
 ```
 git clone https://github.com/KerronKing/Weather-App-JS
 ```
-* Click on each tab to view relevant info therein.
+* Enter a valid city and country (correct spelling necessary) in the search areas provided.
+* Use the toggle box to toggle between viewing temperature in degress celcius & fahrenheit.
 
 ### Technologies Used
 * HTML
