@@ -10,7 +10,7 @@ const external = (() => {
     page.tempChanger(weatherData);
   };
   const capitalize = (entry) => {
-    return entry.toLowerCase()
+    entry.toLowerCase()
       .split(' ')
       .map(word => word.charAt(0).toUpperCase() + word.slice(1))
       .join(' ');
