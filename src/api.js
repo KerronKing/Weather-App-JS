@@ -17,11 +17,7 @@ const external = (() => {
     return proper;
   };
   const getWeather = (city) => {
-    // const casedCountry = capitalize(country);
     const casedCity = capitalize(city);
-    // const internal = await fetch('/src/names.json');
-    // const code = await internal.json();
-    // const cCode = await Object.keys(code).find(key => code[key] === `${casedCountry}`).toLowerCase();
     open(casedCity);
   };
   return { getWeather };

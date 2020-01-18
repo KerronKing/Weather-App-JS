@@ -77,7 +77,6 @@ h1 {
   margin-top: 1rem;
 }
 .data {
-  border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -87,7 +86,8 @@ h1 {
 .data-pt {
   border: 2px solid rgba(255, 255, 255, 0.5);
   color: white;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   margin: 0 auto;
   margin: 1rem;
   padding: 3rem;
