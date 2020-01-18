@@ -6,7 +6,6 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   const data = Object.fromEntries(new FormData(form));
   const { city } = data;
-  const { country } = data;
-  external.getWeather(city, country);
+  external.getWeather(city);
   form.reset();
 });

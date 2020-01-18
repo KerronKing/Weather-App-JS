@@ -1,7 +1,7 @@
 const page = (() => {
-  const render = (obj, name) => {
+  const render = (obj) => {
     const cityLabel = document.getElementById('city-label');
-    cityLabel.textContent = `${obj.name} (${name})`;
+    cityLabel.textContent = `${obj.name}`;
     const temperature = document.getElementById('temperature');
     const celTemp = Math.ceil(obj.main.temp - 273);
     temperature.textContent = `${celTemp} deg C`;
