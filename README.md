@@ -4,7 +4,7 @@ The aim of this project was to design and build a weather forecasting site using
 
 ### Live Link
 
-To see the live version of the page, click [here](https://rawcdn.githack.com/KerronKing/Weather-App-JS/5ebc53fe9a3245e0c9bb720167eec77bf07cfc88/dist/index.html).
+To see the live version of the page, click [here](https://rawcdn.githack.com/KerronKing/Weather-App-JS/cc8049feb723d2478674c1c7444bb7642de725a7/dist/index.html).
 
 ### How to Use
 
