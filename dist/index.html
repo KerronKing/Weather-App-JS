@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather App</title>
+</head>
+<body id="default-bkg">
+  <h1>King's Weather Forecast</h1>
+  <div class="info collection">
+    <form id="form">
+      <label>Enter a location:</label>
+      <input name="city" id="city" type="text" placeholder="City" required>
+      <button class="btn">Get Forecast</button><br>
+    </form>
+    <form id="temp-form">
+      <label id="temp-label">To Fahrenheit:</label>
+      <label class="switch">
+        <input name="temp" id="temp" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+      
+    </form>
+  </div>
+  <div class="info data">
+    <div id="city-label" class="data-pt"></div>
+    <div id="conditions" class="data-pt"></div>
+    <div id="temperature" class="data-pt"></div>
+    <div id="wind-speed" class="data-pt"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

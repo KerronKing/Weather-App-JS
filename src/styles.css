@@ -1,0 +1,139 @@
+body { height: 100vh; }
+@keyframes animbkg {
+  from { background-position: 0 0; }
+  to { background-position: center center; }
+}
+#default-bkg {
+  background-image: url(./assets/sara-the-freak-A4UojtraSrw-unsplash-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#clear {
+  animation: animbkg 5s linear ease-in-out;
+  background-image: url(./assets/marc-wieland-TrzlGaRedf0-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#sunny {
+  animation: animbkg 5s linear ease-in-out;
+  background-image: url(./assets/marko-blazevic-GFFGe2eGmiM-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#rainy {
+  animation: animbkg 5s linear ease-in-out;
+  background-image: url(./assets/zenad-nabil-QNgT5iy62BM-unsplash.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#overcast {
+  animation: animbkg 5s linear ease-in-out;
+  background-image: url(./assets/nathan-anderson-uftVkZ1ikn4-unsplash-2.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1 {
+  color: white;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+}
+.info {
+  border-radius: 5px;
+  font-family: Georgia, Times, 'Times New Roman', serif;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-top: 3rem;;
+}
+.collection {
+  border: 2px solid rgba(255, 255, 255, 0.5); 
+  width: 60%; 
+}
+.info form {
+  text-align: center;
+}
+#form label { color: white; }
+#form input {
+  background-color: transparent;
+  border: 0.1px solid white;
+  border-radius: 5px;
+  color: white;
+  padding: 0.2rem;
+}
+#form input::placeholder { color: rgba(255, 255, 255, 0.5); }
+#form button {
+  background-color: transparent;
+  border: 0.1px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-left: 0.9rem;
+}
+#temp-form {
+  color: white;
+  margin-top: 1rem;
+}
+.data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+  width: 75%;
+}
+.data-pt {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto;
+  margin: 1rem;
+  padding: 3rem;
+  text-align: center;
+  width: 30%;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 2.75rem;
+  height: 1.125rem;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 0.625rem;
+  width: 0.625rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider { background-color: #2196F3; }
+input:focus + .slider { box-shadow: 0 0 1px #2196F3; }
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round { border-radius: 34px; }
+.slider.round:before { border-radius: 50%; }
+#temp-label { margin-right: 0.5rem; }
