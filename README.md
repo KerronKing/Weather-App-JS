@@ -28,6 +28,11 @@ git clone https://github.com/KerronKing/Weather-App-JS
 
 Contributions, issues and feature requests are welcome!
 
+## Future Improvements
+
+* Expanded details
+* Country name implementation for narrowing search
+
 ## Show your support
 
 Feel free to drop a :+1: to show your support. It'd be greatly appreciated it :pray:
