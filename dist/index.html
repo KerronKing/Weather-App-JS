@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>King's Weather Forecast</title>
+</head>
+
+<body id="default-bkg">
+  <nav>
+    <p>King's Weather Forecast</p>
+    <hr>
+  </nav>
+  <div class="info collection">
+    <form id="form">
+      <input name="city" id="city" type="text" placeholder="Enter a location" required>
+      <button class="btn"><i class="fa fa-search" aria-hidden="true"></i></button><br>
+    </form>
+    <form id="temp-form">
+      <label id="temp-label">To Fahrenheit:</label>
+      <label class="switch">
+        <input name="temp" id="temp" type="checkbox">
+        <span class="slider round"></span>
+      </label>
+
+    </form>
+  </div>
+  <div id="city-label" class="city-pt"></div>
+  <p id=date class="hidden"></p>
+  <div id="results-area" class="info data hidden">
+    <div id="temperature" class="data-pt"></div>
+    <div id="conditions" class="data-pt"></div>
+    <div id="wind-speed" class="data-pt"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
