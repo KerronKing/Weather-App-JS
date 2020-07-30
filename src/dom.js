@@ -40,7 +40,7 @@ const page = (() => {
         label.textContent = '';
         label.textContent = 'To Celcius:';
         temperature.textContent = '';
-        const fhrTemp = Math.ceil((obj.main.temp - 273) * (9 / 5) + 32);
+        const fhrTemp = Math.ceil(((obj.main.temp - 273) * (9 / 5)) + 32);
         temperature.textContent = `${fhrTemp} deg F`;
       } else {
         label.textContent = '';
