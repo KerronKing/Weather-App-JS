@@ -1,12 +1,19 @@
+const cityLabel = document.getElementById('city-label');
+const temperature = document.getElementById('temperature');
+const conditions = document.getElementById('conditions');
+const wind = document.getElementById('wind-speed');
+const temp = document.getElementById('temp');
+const label = document.getElementById('temp-label');
+const date = document.getElementById('date');
+const results = document.getElementById('results-area');
+
 const page = (() => {
   const render = (obj) => {
-    const cityLabel = document.getElementById('city-label');
     cityLabel.textContent = `${obj.name}`;
-    const temperature = document.getElementById('temperature');
     const celTemp = Math.ceil(obj.main.temp - 273);
     temperature.textContent = `${celTemp} deg C`;
-    const conditions = document.getElementById('conditions');
     conditions.textContent = `${obj.weather[0].description}`;
+
     if (conditions.textContent.includes('overcast')) {
       document.body.id = '';
       document.body.id = 'overcast';
@@ -20,13 +27,14 @@ const page = (() => {
       document.body.id = '';
       document.body.id = 'clear';
     }
-    const wind = document.getElementById('wind-speed');
+
+    const currentDate = new Date();
+    date.classList.replace('hidden', 'visible');
+    results.classList.remove('hidden');
+    date.textContent = `${currentDate.toLocaleDateString('de-DE')}`;
     wind.textContent = `Wind speed: ${obj.wind.speed}`;
   };
   const tempChanger = (obj) => {
-    const temp = document.getElementById('temp');
-    const temperature = document.getElementById('temperature');
-    const label = document.getElementById('temp-label');
     temp.addEventListener('change', () => {
       if (temp.checked) {
         label.textContent = '';
