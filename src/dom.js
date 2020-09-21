@@ -29,7 +29,6 @@ const page = (() => {
     }
 
     const currentDate = new Date();
-    date.classList.replace('hidden', 'visible');
     results.classList.remove('hidden');
     date.textContent = `${currentDate.toLocaleDateString('de-DE')}`;
     wind.textContent = `Wind speed: ${obj.wind.speed}`;
