@@ -1,16 +1,16 @@
 import page from './dom';
 
 const location = (() => {
-  let options = {
+  const options = {
     enableHighAccuracy: true,
     timeout: 5000,
-    maximumAge: 0
+    maximumAge: 0,
   };
 
   const success = async (pos) => {
     const appID = '6afc4c4d6d160273a7559007309c6525';
-    const url = 'https://api.openweathermap.org/data/2.5/weather?'
-    let crd = pos.coords;
+    const url = 'https://api.openweathermap.org/data/2.5/weather?';
+    const crd = pos.coords;
 
     const response = await fetch(`${url}lat=${crd.latitude}&lon=${crd.longitude}&appid=${appID}`, { mode: 'cors' });
     const initialData = await response.json();
@@ -19,7 +19,7 @@ const location = (() => {
   };
 
   const error = (err) => {
-    console.log(err);
+    throw err;
   };
 
   const getCurrentLocation = () => {
