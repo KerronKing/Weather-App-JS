@@ -1,7 +1,8 @@
-body { height: 100vh; }
-@keyframes animbkg {
-  from { background-position: 0 0; }
-  to { background-position: center center; }
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
+
+body {
+  font-family: 'Epilogue', sans-serif;
+  height: 100vh;
 }
 nav p {
   color: white;
@@ -27,28 +28,24 @@ nav hr {
   background-size: cover;
 }
 #clear {
-  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/marc-wieland-TrzlGaRedf0-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #sunny {
-  animation: animbkg 5s linear ease-in-out;
-  background-image: url(./assets/marko-blazevic-GFFGe2eGmiM-unsplash.jpg);
+  background-image: url(./assets/zwaddi-YvYBOSiBJE8-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #rainy {
-  animation: animbkg 5s linear ease-in-out;
-  background-image: url(./assets/zenad-nabil-QNgT5iy62BM-unsplash.jpg);
+  background-image: url(./assets/marc-zimmer-1dNujhlCTYQ-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #overcast {
-  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/nathan-anderson-uftVkZ1ikn4-unsplash-2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -56,10 +53,10 @@ nav hr {
 }
 .info {
   border-radius: 5px;
-  font-family: Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
   padding: 1rem;
   margin: 0 auto;
-  margin-top: 3rem;;
+  margin-top: 3rem;
 }
 .collection {
   width: 35%; 
@@ -70,7 +67,7 @@ nav hr {
 #form label { color: white; }
 #form input {
   background-color: transparent;
-  border: 0.1px solid white;
+  border: 0.1px solid rgb(255, 255, 255, 0.4);
   border-radius: 5px;
   color: white;
   padding: 0.5rem;
@@ -79,7 +76,7 @@ nav hr {
 #form input::placeholder { color: rgba(255, 255, 255, 0.5); }
 #form button {
   background-color: transparent;
-  border: 0.1px solid white;
+  border: 0.1px solid rgb(255, 255, 255, 0.4);
   border-radius: 5px;
   color: white;
   margin-left: 0.9rem;
@@ -89,32 +86,24 @@ nav hr {
 }
 #temp-form {
   color: white;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .data {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  left: 5%;
+  margin: 0 auto;
+  margin-bottom: 5rem;
   padding: 2rem;
-  position: absolute;
-  top: 30%;
-  width: 75%;
-}
-.city-pt {
-  color: white;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding: 2rem 0rem 2rem 0rem;
-  width: 30%;
+  position: relative;
+  top: 20%;
+  width: 85%;
 }
 .data-pt {
   color: white;
-  font-size: 1.5rem;
   font-weight: bold;
   margin: 0 auto;
-  margin: 1rem;
   padding: 2rem;
   text-align: center;
   width: 30%;
@@ -163,10 +152,13 @@ input:checked + .slider:before {
 .slider.round:before { border-radius: 50%; }
 #temp-label { margin-right: 0.5rem; }
 #city-label {
+  color: white;
   font-size: 2rem;
-  margin-left: 2.7rem;
-  position: relative;
-  top: 4%;
+  font-weight: bold;
+  line-height: 2.5;
+  margin: 0 auto;
+  text-align: center;
+  width: 30%;
 }
 #date {
   color: white;
@@ -174,6 +166,22 @@ input:checked + .slider:before {
   left: 4.5%;
   position: relative;
 }
-#temperature {
-  font-size: 1.5rem;
+
+@media only screen and (max-width: 1024px) {
+  .data {
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 50%;
+    position: static;
+  }
+  #city-label { width: 100%; }
+  #date { position: static; }
+}
+
+@media only screen and (max-width: 767px) {
+  body { height: 100%; }
+}
+
+@media only screen and (max-width: 500px) {
+  .collection { width: 80%; }
 }
