@@ -64,7 +64,7 @@ nav hr {
   font-weight: bold;
   padding: 1rem;
   margin: 0 auto;
-  margin-top: 3rem;;
+  margin-top: 3rem;
 }
 .collection {
   width: 35%; 
@@ -112,7 +112,6 @@ nav hr {
   color: white;
   font-weight: bold;
   margin: 0 auto;
-  margin: 1rem;
   padding: 2rem;
   text-align: center;
   width: 30%;
@@ -164,8 +163,8 @@ input:checked + .slider:before {
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  margin-left: 2.7rem;
-  padding: 2rem 0rem 2rem 0rem;
+  line-height: 2.5;
+  margin: 0 auto;
   text-align: center;
   width: 30%;
 }
@@ -174,4 +173,23 @@ input:checked + .slider:before {
   font-size: 1rem;
   left: 4.5%;
   position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  .data {
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 50%;
+    position: static;
+  }
+  #city-label { width: 100%; }
+  #date { position: static; }
+}
+
+@media only screen and (max-width: 767px) {
+  body { height: 100%; }
+}
+
+@media only screen and (max-width: 500px) {
+  .collection { width: 80%; }
 }
