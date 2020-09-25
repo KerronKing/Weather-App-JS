@@ -4,10 +4,6 @@ body {
   font-family: 'Epilogue', sans-serif;
   height: 100vh;
 }
-@keyframes animbkg {
-  from { background-position: 0 0; }
-  to { background-position: center center; }
-}
 nav p {
   color: white;
   font-size: 1.5rem;
@@ -32,28 +28,24 @@ nav hr {
   background-size: cover;
 }
 #clear {
-  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/marc-wieland-TrzlGaRedf0-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #sunny {
-  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/zwaddi-YvYBOSiBJE8-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #rainy {
-  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/marc-zimmer-1dNujhlCTYQ-unsplash.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #overcast {
-  animation: animbkg 5s linear ease-in-out;
   background-image: url(./assets/nathan-anderson-uftVkZ1ikn4-unsplash-2.jpg);
   background-position: center center;
   background-repeat: no-repeat;
