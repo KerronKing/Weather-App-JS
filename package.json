@@ -10,9 +10,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --open --config webpack.prod.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "webpack --open --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/KerronKing/Weather-App-JS/issues"
   },
-  "homepage": "https://kerronking.github.io/Weather-App-JS/",
+  "homepage": "https://github.com/KerronKing/Weather-App-JS#readme",
   "devDependencies": {
     "css-loader": "^3.4.1",
     "eslint": "^6.8.0",
