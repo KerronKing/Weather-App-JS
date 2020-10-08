@@ -17,6 +17,5 @@ module.exports = {
         use: ['html-loader'],
       }
     ],
-  },
-  watch: true,
+  }
 };
