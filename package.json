@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack -p"
+    "build": "webpack --open --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
