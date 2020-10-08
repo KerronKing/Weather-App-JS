@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap');
-
 body {
   font-family: 'Epilogue', sans-serif;
   height: 100vh;
@@ -22,31 +20,31 @@ nav hr {
   visibility: visible;
 }
 #default-bkg {
-  background-image: url(./assets/sara-the-freak-A4UojtraSrw-unsplash-2.jpg);
+  background-image: url('https://www.dropbox.com/s/qvr1zer40qeb8jl/sara-the-freak-A4UojtraSrw-unsplash-2.jpg?raw=1');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #clear {
-  background-image: url(./assets/marc-wieland-TrzlGaRedf0-unsplash.jpg);
+  background-image: url('https://www.dropbox.com/s/z223yz1okwnrraf/marc-wieland-TrzlGaRedf0-unsplash.jpg?raw=1');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #sunny {
-  background-image: url(./assets/zwaddi-YvYBOSiBJE8-unsplash.jpg);
+  background-image: url('https://www.dropbox.com/s/7kcy2okw6o6dnd9/zwaddi-YvYBOSiBJE8-unsplash.jpg?raw=1');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #rainy {
-  background-image: url(./assets/marc-zimmer-1dNujhlCTYQ-unsplash.jpg);
+  background-image: url('https://www.dropbox.com/s/q99wsf4v67v415p/marc-zimmer-1dNujhlCTYQ-unsplash.jpg?raw=1');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 #overcast {
-  background-image: url(./assets/nathan-anderson-uftVkZ1ikn4-unsplash-2.jpg);
+  background-image: url('https://www.dropbox.com/s/987qwzurxkevofs/nathan-anderson-uftVkZ1ikn4-unsplash-2.jpg?raw=1');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
